@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>박스모델</title>
+	<style>
+		div {
+			float:left;
+			margin-right:20px;
+		}
+		.box1 {
+			box-sizing:content-box;		/*콘텐츠 영역 기준*/
+			width: 300px;		/*콘텐츠 영역 너비 300px*/
+			height: 150px;		/*높이*/
+			margin: 10px;	
+			padding: 30px;
+			border:2px solid red;
+		}
+		.box2 {
+			box-sizing:border-box;
+			width: 300px;
+			height: 150px;
+			margin:10px;
+			padding:30px;
+			border:2px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">box-sizing= "content-box"</div>
+	<div class="box2">box-sizing= "border-box"</div>
+</body>
+</html>
